@@ -1,0 +1,202 @@
+%------------------------
+% Resume
+% Author : Adam Mischke
+% Github : https://github.com/vanities
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage[dvipsnames]{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+%  & Email: \href{mailto:}{mischke@protonmail.com}
+\begin{tabularx}{\textwidth}{X|X|X|X}
+  \href{https://catwebm.com}{catwebm.com}
+  ~~~+1-931-998-0046
+  \textbf{{\LARGE Adam Mischke}}
+  \href{mailto:}{mischke@protonmail.com}
+  \href{https://github.com/vanities}{~~github.com/vanities}
+\end{tabularx}
+
+%----------SUMMARY-----------------
+{\color{BrickRed} \section{Summary}}
+  Strong work ethic Full-stack Engineer that learns quickly and is a committed team player. Has 4-years of startup experience working in an agile and TDD environment. Served in the United States Navy as a Network Administrator.
+ \vspace{12pt}
+
+%-----------EDUCATION-----------------
+{\color{YellowOrange} \section{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Middle Tennessee State University}{Murfreesboro, Tennessee}
+      {Bachelor of Science - Computer Science; Minor in Mathematics}{July 2014 - June 2018}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Awards / Memberships:} Dean’s List 2014-2018, Member of Association of Computing Machinery (ACM), Member of the Upsilon Pi Epsilon Computer Honor Society}}}
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%----------SKILLS-----------------
+{\color{Mulberry} \section{Skills}}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~Python, Swift, JavaScript, C++, SQL, Bash, Solidity }
+	\resumeSubItem{Frameworks}{~~~~Django, Flask, NodeJS, React, SwiftUI }
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Docker, Terraform, GIT, PostgreSQL, Fastlane}
+	\resumeSubItem{Platforms}{~~~~~~~Mac, Linux, Web, iOS, AWS, GCP, Firebase, Github, Datadog, Sentry, Code Climate, CircleCI}
+	\resumeSubItem{Soft Skills}{~~~~~~~Leadership, Problem Solving, Strong Communication Skills, Time Management}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%----------EXPERIENCE-----------------
+{\color{ForestGreen} \section{Experience}}
+  %----------FUN-----------------
+  \resumeSubHeadingListStart
+    \resumeSubheading{FunFunFun Inc. - Gen Z Dating}{Remote}
+    {Full-stack Engineer (Full-time)}{May 2020 - June 2022}
+    \resumeItemListStart
+        \resumeItem{First Engineering Hire}
+          {Created a live updating video dating app that integrated with TikTok with over 10,000 users, where users could like, match, and message each-other.}
+          \resumeItem{Backend}
+          {Built a Django and GraphQL and a matching algorithm to pair users together with alike parameters.}
+          \resumeItem{Frontend}
+          {Deployed a complete SwiftUI app from the ground up to app store. Contributed to an internal Typescript React webpage to police uploaded media and content used by admins.}
+          \resumeItem{DevOps}
+          {Used GitHub actions to create an CI/CD pipeline for the backend and iOS using fastlane for multiple environments.}
+          \resumeItem{Algorithms}
+          {Created a series of Firebase, Firestore, and Google Storage Typescript triggers to create a video processing pipeline that asynchronously cut over 8,000 videos.}
+      \resumeItemListEnd
+\vspace{-5pt}
+
+    %----------COINMINE-----------------
+    \resumeSubheading
+		{Coinmine - Crypto Mining Made Easy}{Remote}
+		{Software Engineer (Full-time - Part-time)}{May 2018 - Current}
+		\resumeItemListStart
+        \resumeItem{First Engineering Hire}
+        {Built and maintained mineOS, an Arch Linux-Based Operating System, onto a small form factor computer that mined 6 different cryptocurrencies 24/7 that users could plug and play at home.}
+        \resumeItem{mineOS}
+        {Fabricated the build and deployment tools for distributing mineOS images through a test and build pipeline for over 5,000 miners.}
+        \resumeItem{Backend}
+        {Used Agile, Extreme Programming and Test Driven Development methodologies to deploy, update, and configure a Django based backend with over 8,000 users.}
+        \resumeItem{DevOps}
+        {Arranged and operated analytical, deployment, and pipeline tools such as: CircleCI, Code Climate, Datadog, and Sentry.}
+        \resumeItem{Frontend}
+        {Collaborated with React Native Engineer to build smooth frontend experience between API and Coinmine machine.}
+        \resumeItem{Leadership}
+        {Worked with overseas distribution centers to construct and create Standard Operating Procedures (SOP) for assembly and manufacturing.}
+		\resumeItemListEnd
+\vspace{-5pt}
+
+    %----------CAT-----------------
+    \resumeSubheading
+		{Caterpillar Financial Services Corporation}{}
+		{Information Services - Network Team (Intern)}{May 2017 – July 2017}
+		\resumeItemListStart
+        \resumeItem{Leadership}
+        {Led research, meetings, and recommended the replacement of a network team application. Worked as liaison between team members and company solutions. Then sought out quote to be implemented into the yearly budget.}
+        \resumeItem{Problem Solving}
+        {Researched and developed a web dashboard that displayed global network information with Python and Flask using a SQL database. Used JavaScript, J-Query, Bootstrap, AJAX, and Google Charts to form a coherent and simple-to-use website. Implemented a search function that integrated with database calls to speed up information flow.}
+		\resumeItemListEnd
+\vspace{-5pt}
+
+ %----------NAVY-----------------
+    \resumeSubheading
+		{United States Navy}{}
+		{Fire controlman (FC2) - Computer and Network Technician (Full-time)}{July 2008 - July 2014}
+		\resumeItemListStart
+        \resumeItem{Leadership}
+        {Efficiently led as work center supervisor, 8 personnel in accomplishing over 1,634 maintenance actions with a 94\% maintenance accomplishment rate, managing 372 maintenance checks and repairs.}
+        \resumeItem{Security Clearance}
+        {Held a Secret Clearance and handled the Electronic Key Management System, which managed 106 classified software programs and hardware systems.}
+        \resumeItem{Preventative \& Corrective Maintenance}
+        {Upkeep and corrective maintenance of the Ship's Self Defense System, Open architecture network server and computer systems, Battle Force Tactical Trainer network, and Cooperative Engagement Capability LAN.}
+        \resumeItem{Teamwork}
+        {Assisted in the successful overhaul of 3 major system installs with lead engineers to include: Hardware, software, and network installation, troubleshooting to the perfection of the system.}
+		\resumeItemListEnd
+\vspace{-5pt}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Vison - multimedia search engine (NLP, Search Engine, Web Crawlers, Multimedia Processing)}{(Work in progress) Research oriented, open source, search engine for bringing reverse multimedia search to small \& mid scale enterprises. Tech: Python, NodeJS, Intel OpenVino Toolkit, Selenium, TensorFlow (October '18)}
+\vspace{2pt}
+\resumeSubItem{Reinforcement Learning based Traffic Control System (Reinforcement Learning, Computer Vision)}{AI model to resolve city traffic around 50\%
+faster. Tech: Python, Alibaba Cloud, Raspberry Pi, Arduino, SUMO \& OpenCV. (August '18)}
+\vspace{2pt}
+\resumeSubItem{Panorama from Satellite Imagery using Distributed Computing (Distributed Computing, Image Processing)}{Images clicked using drones, provided by ISRO were stitched together using distributed public compute nodes, effectively bringing down processing time exponentially. Tech: PHP, C++, Java, Python (March '18)}
+\vspace{2pt}
+\resumeSubItem{Drag-n-drop machine learning learning environment (Web Development, Machine Learning)}{Scratch like tool for implementing machine learning pipelines along with built in tutorial for each concept. Tech: Python, JavaScript (September '18)}
+\vspace{2pt}
+\resumeSubItem{Search Engine and Social Network(Web Development, Web Crawler, Search)}{Created from scratch a social network and a search engine based on the idea of integrating Facebook and Google. The launched website was among top 1000 websites in India during 2012-2013. Tech: PHP, MySQL, HTML, CSS, WebSockets, JavaScript, RSS, XML ( May '12)}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\end{document}
