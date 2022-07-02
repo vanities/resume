@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp main.pdf ~/git/fun/vanities.github.io/assets/docs/resume.pdf
