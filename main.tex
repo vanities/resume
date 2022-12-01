@@ -1,7 +1,7 @@
 %------------------------
 % Resume
 % Author : Adam Mischke
-% Github : https://github.com/vanities
+% GIthub : https://gIthub.com/vanities
 % License : MIT
 %------------------------
 
@@ -19,6 +19,15 @@
 \usepackage{tabularray}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{link}{HTML}{3366BB}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=link,
+    }
 
 \graphicspath{ {./assets/} }
 
@@ -93,8 +102,8 @@
   colspec = {X[c]X[c]X[c]X[c]X[c]X[c]},
   stretch = 0,
 }
-    \includegraphics{contacticon.png} & \includegraphics{emailicon.png} & & & \includegraphics{wwwicon.png} & \includegraphics{githubicon.png} \\
-    +1-931-998-0046 & \href{mailto:mischke@protonmail.com}{mischke@protonmail.com} & & & \href{https://catwebm.com}{catwebm.com} & \href{https://github.com/vanities}{github.com/vanities} \\
+    \includegraphics{contacticon.png} & \includegraphics{emailicon.png} & & & \includegraphics{wwwicon.png} & \includegraphics{gIthubicon.png} \\
+    +1-931-998-0046 & \href{mailto:mischke@protonmail.com}{mischke@protonmail.com} & & & \href{https://catwebm.com}{catwebm.com} & \href{https://gIthub.com/vanities}{github.com/vanities} \\
 \end{tblr}
 \end{center}
 \vspace{-10pt}
@@ -121,7 +130,7 @@
 	\resumeSubItem{Languages}{~~~~~Python, Swift, JavaScript, Typescript, C++, SQL, Bash, Solidity}
 	\resumeSubItem{Frameworks}{~~~Django, Flask, NodeJS, React, NextJS, SwiftUI}
 	\resumeSubItem{Tools}{~~~~~~~~~~~~~Docker, Terraform, Pivotal Tracker, GIT, PostgreSQL, Fastlane, Hardhat, Redux}
-	\resumeSubItem{Platforms}{~~~~~~Mac, Linux, Web, iOS, AWS, GCP, Firebase, Github, Datadog, Sentry, Code Climate, CircleCI}
+	\resumeSubItem{Platforms}{~~~~~~Mac, Linux, Web, iOS, AWS, GCP, Firebase, Github, Datadog, Sentry, Code Climate, CircleCI, Vercel}
 	\resumeSubItem{Soft Skills}{~~~~~~Leadership, Problem Solving, Strong Communication, Time Management}
 \resumeSubHeadingListEnd
 \vspace{-5pt}
@@ -132,7 +141,7 @@
   \resumeSubHeadingListStart
 
   %----------OPEN3-----------------
-    \resumeSubheading{Open3}{Remote}
+  \resumeSubheading{\underline{\href{http://open3.com}{Open3 - Qualified Digital Art Platform}}}{Remote}
     {Senior Full-stack Engineer (Full-time)}{July 2022 - December 2022}
     \resumeItemListStart
           \resumeItem{Focused Execution}
@@ -142,7 +151,7 @@
           \resumeItemListEnd
 
   %----------FUN-----------------
-    \resumeSubheading{FunFunFun Inc. - Gen Z Dating}{Remote}
+          \resumeSubheading{\underline{\href{http://funfunfun.app}{FunFunFun Inc. - Gen Z Dating}}}{Remote}
     {Full-stack Engineer (Full-time)}{May 2020 - June 2022}
     \resumeItemListStart
         \resumeItem{First Engineering Hire}
@@ -157,7 +166,7 @@
 
     %----------COINMINE-----------------
     \resumeSubheading
-		{Coinmine - Crypto Mining Made Easy}{Remote}
+    {\underline{\href{http://coinmine.com}{Coinmine - Crypto Mining Made Easy}}}{Remote}
 		{Software Engineer (Full-time - Part-time)}{May 2018 - Current}
 		\resumeItemListStart
         \resumeItem{First Engineering Hire}
@@ -174,7 +183,7 @@
 
     %----------CAT-----------------
     \resumeSubheading
-		{Caterpillar Financial Services Corporation}{}
+    {\underline{\href{https://www.catfinancial.com/en_US.html/}{Caterpillar Financial Services Corporation}}}{}
 		{Information Services - Network Team (Intern)}{May 2017 – July 2017}
 		\resumeItemListStart
         \resumeItem{Leadership}
@@ -187,7 +196,7 @@
 
  %----------NAVY-----------------
     \resumeSubheading
-		{United States Navy}{}
+    {\underline{\href{https://www.navy.mil/}{United States Navy}}}{}
 		{Fire controlman (FC2) - Computer and Network Technician (Full-time)}{July 2008 - July 2014}
 		\resumeItemListStart
         \resumeItem{Leadership}

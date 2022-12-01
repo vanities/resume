@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1669932641 "main.tex" "main.pdf" "main" 1669932642
+["pdflatex"] 1669934827 "main.tex" "main.pdf" "main" 1669934828
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm" 1136768653 1536 c4f439db76ef96a9c53bc437f35ffe20 ""
@@ -99,11 +99,11 @@
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "assets//contacticon.png" 1656716737 3031 9aa7da339378ddb2373f1b05d9fa71f9 ""
   "assets//emailicon.png" 1656716732 3347 3c1ad6bcbea4aeeaeca2daf4b97f5d16 ""
-  "assets//githubicon.png" 1656716747 3146 e8cfc8aa9e2c058c5d14468c57e93231 ""
+  "assets//gIthubicon.png" 1656716747 3146 e8cfc8aa9e2c058c5d14468c57e93231 ""
   "assets//wwwicon.png" 1656716742 4916 1a571a5ec120a4956211cbb44ebbd01d ""
-  "main.aux" 1669932642 1150 fef13952e3fff17447b77be78a0de829 "pdflatex"
-  "main.out" 1669932642 332 13b95f4997bd53a9aebd399d575367c0 "pdflatex"
-  "main.tex" 1669932640 9761 8d090699cce47d71d257e43e8ae4d0f1 ""
+  "main.aux" 1669934828 1150 fef13952e3fff17447b77be78a0de829 "pdflatex"
+  "main.out" 1669934828 332 13b95f4997bd53a9aebd399d575367c0 "pdflatex"
+  "main.tex" 1669934825 10210 2e9707113d0fcb619ca06e65ae8e60be ""
   (generated)
   "main.aux"
   "main.log"
