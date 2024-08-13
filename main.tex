@@ -22,14 +22,13 @@
 \usepackage{xcolor}
 \definecolor{link}{HTML}{3366BB}
 \usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,
-    urlcolor=link,
-    }
+\hypersetup{colorlinks=true,
+            linkcolor=blue,
+            filecolor=magenta,
+            urlcolor=link,
+}
 
-\graphicspath{ {./assets/} }
+\graphicspath{{./assets/}}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -47,14 +46,14 @@
 \addtolength{\topmargin}{-0.7in}
 \addtolength{\textheight}{1in}
 
-\raggedbottom
-\raggedright
+\raggedbottom{}
+\raggedright{}
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
 \titleformat{\section}{
   \vspace{-10pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]{}
 
 %-------------------------
 % Custom commands
@@ -79,12 +78,8 @@
 }
 
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
-
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
@@ -103,7 +98,7 @@
   stretch = 0,
 }
     \includegraphics{contacticon.png} & \includegraphics{emailicon.png} & & & \includegraphics{wwwicon.png} & \includegraphics{gIthubicon.png} \\
-    +1-931-998-0046 & \href{mailto:mischke@protonmail.com}{mischke@protonmail.com} & & & \href{https://catwebm.com}{catwebm.com} & \href{https://gIthub.com/vanities}{github.com/vanities} \\
+    +1-931-998-0046 & \href{mailto:mischke@protonmail.com}{mischke@protonmail.com} & & & \href{https://catwebm.com}{catwebm.com} & \href{https://github.com/vanities}{github.com/vanities} \\
 \end{tblr}
 \end{center}
 \vspace{-10pt}
@@ -111,7 +106,7 @@
 %----------SUMMARY-----------------
 {\color{Maroon} \section{\textbf{Summary}}}
   Dedicated Full-stack Engineer with a strong work ethic, known for quick learning and commitment to teamwork while mentoring junior developers. Brings 5 years of startup experience in agile and TDD environments, taking ownership of both process and solution lifecycles. Previously served 6 years as an Engineer in the United States Navy, specializing in the Ship's Self-Defense System.
- \vspace{12pt}
+ \vspace{16pt}
 
 %-----------EDUCATION-----------------
 {\color{MidnightBlue} \section{\textbf{Education}}}
@@ -122,18 +117,16 @@
       \vspace{5pt}
       {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Awards / Memberships:} Dean’s List 2014-2018, Member of Association of Computing Machinery (ACM), Member of the Upsilon Pi Epsilon Computer Honor Society}}}
     \resumeSubHeadingListEnd
-\vspace{-10pt}
 
 %----------SKILLS-----------------
 {\color{Periwinkle} \section{\textbf{Skills}}}
-	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{~~~~~Python, Swift, JavaScript, Typescript, C++, SQL, Bash, Solidity}
-	\resumeSubItem{Frameworks}{~~~Django, Flask, NodeJS, React, NextJS, SwiftUI}
-	\resumeSubItem{Tools}{~~~~~~~~~~~~~Docker, Terraform, Pivotal Tracker, GIT, PostgreSQL, Fastlane, Hardhat, Redux}
-	\resumeSubItem{Platforms}{~~~~~~Mac, Linux, Web, iOS, AWS, GCP, Firebase, Github, Datadog, Sentry, Code Climate, CircleCI, Vercel}
-	\resumeSubItem{Soft Skills}{~~~~~~Leadership, Problem Solving, Strong Communication, Time Management}
-\resumeSubHeadingListEnd
-\vspace{-5pt}
+\begin{tabular}{p{3cm} p{24cm}}
+\hspace{0.5cm}\textbf{Languages} & Python, Swift, JavaScript, Typescript, C++, SQL, Bash, Solidity \\
+\hspace{0.5cm}\textbf{Frameworks} & Django, Flask, NodeJS, React, NextJS, SwiftUI \\
+\hspace{0.5cm}\textbf{Tools} & Docker, Terraform, Pivotal Tracker, GIT, PostgreSQL, Fastlane, Hardhat, Redux \\
+\hspace{0.5cm}\textbf{Platforms} & Mac, Linux, Web, iOS, AWS, GCP, Firebase, Github, Datadog, Sentry, Code Climate, CircleCI, Vercel \\
+\hspace{0.5cm}\textbf{Soft Skills} & Leadership, Problem Solving, Strong Communication, Time Management \\
+\end{tabular}
 
 %----------EXPERIENCE-----------------
 {\color{ForestGreen} \section{\textbf{Experience}}}
@@ -155,9 +148,9 @@
     {Senior Full-stack Engineer (Full-time)}{July 2022 - December 2022}
     \resumeItemListStart
           \resumeItem{Focused Execution}
-          {Built in 3 months from the ground up, a website experience that had over 17,000 verified users and hosted 68 partners and their projects that included brands such as Liquid Death.}
+          {Developed a website from the ground up in just 3 months, attracting over 17,000 verified users and hosting 68 partners and their projects, including renowned brands like Liquid Death.}
           \resumeItem{Leadership}
-          {Worked alongside Artists and Brands to generate digital art and deployed over 33 smart contracts that sold over 100,000 art pieces.}
+          {Collaborated with artists and brands to create digital art, deploying over 33 smart contracts that resulted in the sale of more than 100,000 art pieces.Worked alongside Artists and Brands to generate digital art and deployed over 33 smart contracts that sold over 100,000 art pieces.}
           \resumeItemListEnd
 
   %----------FUN-----------------
@@ -165,13 +158,13 @@
     {Full-stack Engineer (Full-time)}{May 2020 - June 2022}
     \resumeItemListStart
         \resumeItem{First Engineering Hire}
-          {Subject Matter Expert on a live updating video dating app that integrated with TikTok with over 10,000 users, where users could like, match, and message each-other.}
+          {Served as the Subject Matter Expert for a live-updating video dating app integrated with TikTok, which attracted over 10,000 users. The app enabled users to like, match, and message each other in real-time.}
           \resumeItem{Backend}
-          {Built a Django and GraphQL REST API and a matching algorithm to pair users together with alike parameters. Created a series of Firebase, Firestore, and Google Storage Typescript triggers to create a video processing pipeline that asynchronously cut over 8,000 videos.}
+          {Developed a Django and GraphQL REST API along with a matching algorithm to pair users based on similar parameters. Created a video processing pipeline using Firebase, Firestore, and Google Storage TypeScript triggers, which asynchronously processed and cut over 8,000 videos.}
           \resumeItem{Frontend}
-          {Deployed a complete SwiftUI iOS app from the ground up to app store. Contributed to an internal Typescript React webpage to police uploaded media and content used by admins.}
+          {Launched a SwiftUI iOS app from the ground up and successfully deployed it to the App Store. Also contributed to an internal TypeScript React webpage, enabling admins to monitor and manage uploaded media and content.}
           \resumeItem{DevOps}
-          {Used GitHub actions to create an CI/CD pipeline for testing and deploying the backend and iOS using fastlane for multiple environments.}
+          {Implemented a CI/CD pipeline using GitHub Actions to automate testing and deployment for both the backend and iOS app, utilizing Fastlane to manage multiple environments.}
       \resumeItemListEnd
 
     %----------COINMINE-----------------
@@ -180,15 +173,15 @@
 		{Software Engineer (Full-time - Part-time)}{May 2018 - Current}
 		\resumeItemListStart
         \resumeItem{First Engineering Hire}
-        {Built a plug-and-play cryptocurrency miner that mined 6 different cryptocurrencies 24/7, that a user could control with their iOS or Android phone.}
+        {Developed a plug-and-play cryptocurrency miner capable of mining six different cryptocurrencies 24/7, allowing users to control the device through their iOS or Android phones.}
         \resumeItem{mineOS}
-        {Built and maintained mineOS, an Arch Linux-Based Operating System, onto a small form factor computer. Fabricated the build and deployment tools for distributing mineOS images through a test and build pipeline to remotely update over 5,000 miners.}
+        {Developed and maintained MineOS, an Arch Linux-based operating system for small form factor computers. Created build and deployment tools to distribute MineOS images, enabling remote updates for over 5,000 miners through a test and build pipeline.}
         \resumeItem{Backend}
-        {Used Agile, Extreme Programming and Test Driven Development methodologies to deploy, update, and configure a Django based REST API with over 10,000 users. Created programmatic reports to calculate all accounting owed and owned.}
+        {Utilized Agile, Extreme Programming, and Test-Driven Development methodologies to deploy, update, and configure a Django-based REST API serving over 10,000 users. Developed programmatic reports to calculate all accounting assets.}
         \resumeItem{DevOps}
-        {Arranged and operated analytical, deployment, and pipeline tools such as: CircleCI, Code Climate, Datadog, and Sentry.}
+        {Configured and managed analytical, deployment, and pipeline tools including CircleCI, Code Climate, Datadog, and Sentry.}
         \resumeItem{Communication}
-        {Worked with overseas distribution centers in China to construct and create Standard Operating Procedures (SOP) for assembly and manufacturing.}
+        {Collaborated with overseas distribution centers in China to develop and implement Standard Operating Procedures (SOPs) for assembly and manufacturing.}
 		\resumeItemListEnd
 \vspace{10pt}
 
@@ -198,11 +191,10 @@
 		{Information Services - Network Team (Intern)}{May 2017 – July 2017}
 		\resumeItemListStart
         \resumeItem{Leadership}
-        {Led research, meetings, and recommended the replacement of a network team application. Worked as liaison between team members and company solutions, then sought out quote to be implemented into the yearly budget.}
+        {Led research and meetings to recommend replacing a network team application. Acted as the liaison between team members and company solutions, and obtained quotes for integration into the annual budget.}
         \resumeItem{Problem Solving}
-        {Researched and developed a web dashboard that displayed global network information with Python and Flask using a SQL database. Used JavaScript, J-Query, Bootstrap, AJAX, and Google Charts to form a coherent and simple-to-use website. Implemented a search function that integrated with database calls to speed up information flow.}
+        {Researched and developed a web dashboard using Python and Flask with a SQL database to display global network information. Utilized JavaScript, jQuery, Bootstrap, AJAX, and Google Charts to create a user-friendly interface. Implemented a search function that integrated with database calls to enhance information retrieval speed.}
          \resumeItem{Process Improvement}{Six Sigma Green Belt Trained}
-	\resumeItem{Public Speaking}{Completed both projects within scope and presented both projects to the entire CAT Financial leadership and received Excellent feedback.}
 		\resumeItemListEnd
 
  %----------NAVY-----------------
