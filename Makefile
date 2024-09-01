@@ -1,6 +1,6 @@
 .PHONY: pdf
 
-pdf:
+resume:
 	pdflatex --interaction=nonstopmode main.tex;
 
 cover:

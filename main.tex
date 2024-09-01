@@ -8,6 +8,7 @@
 \documentclass[a4paper,20pt]{article}
 
 \usepackage{latexsym}
+\usepackage{lastpage}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
@@ -32,7 +33,7 @@
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
-\fancyfoot{}
+\fancyfoot[R]{\hspace{\textwidth}\textcolor{gray}{\textit{Page \thepage{} of \textcolor{gray}{\pageref*{LastPage}}}}}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -59,7 +60,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2 \vspace{-6pt}}
   }
 }
 
@@ -81,7 +82,7 @@
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 %-----------------------------
 %%%%%%  CV STARTS HERE  %%%%%%
@@ -98,35 +99,26 @@
   stretch = 0,
 }
     \includegraphics{contacticon.png} & \includegraphics{emailicon.png} & & & \includegraphics{wwwicon.png} & \includegraphics{gIthubicon.png} \\
-    +1-931-998-0046 & \href{mailto:mischke@protonmail.com}{mischke@protonmail.com} & & & \href{https://catwebm.com}{catwebm.com} & \href{https://github.com/vanities}{github.com/vanities} \\
+    +1-931-998-0046 & \href{mailto:mischke@proton.me}{mischke@proton.me} & & & \href{https://catwebm.com}{catwebm.com} & \href{https://github.com/vanities}{github.com/vanities} \\
 \end{tblr}
 \end{center}
 \vspace{-10pt}
 
 %----------SUMMARY-----------------
 {\color{Maroon} \section{\textbf{Summary}}}
-  Dedicated Full-stack Engineer with a strong work ethic, known for quick learning and commitment to teamwork while mentoring junior developers. Brings 5 years of startup experience in agile and TDD environments, taking ownership of both process and solution lifecycles. Previously served 6 years as an Engineer in the United States Navy, specializing in the Ship's Self-Defense System.
+  Dedicated Full-stack Engineer with a strong work ethic, known for quick learning and commitment to teamwork while mentoring junior developers. Brings 5 years of startup experience in agile and TDD environments, taking ownership of both process and solution lifecycles. Previously served 6 years as an Engineer in the United States Navy.
  \vspace{16pt}
 
-%-----------EDUCATION-----------------
-{\color{MidnightBlue} \section{\textbf{Education}}}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Middle Tennessee State University}{Murfreesboro, Tennessee}
-      {Bachelor of Science - Computer Science; Minor in Mathematics}{July 2014 - June 2018}
-      \vspace{5pt}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Awards / Memberships:} Dean’s List 2014-2018, Member of Association of Computing Machinery (ACM), Member of the Upsilon Pi Epsilon Computer Honor Society}}}
-    \resumeSubHeadingListEnd
-
 %----------SKILLS-----------------
-{\color{Periwinkle} \section{\textbf{Skills}}}
+{\color{BurntOrange} \section{\textbf{Skills}}}
 \begin{tabular}{p{3cm} p{24cm}}
-\hspace{0.5cm}\textbf{Languages} & Python, Swift, JavaScript, Typescript, C++, SQL, Bash, Solidity \\
-\hspace{0.5cm}\textbf{Frameworks} & Django, Flask, NodeJS, React, NextJS, SwiftUI \\
-\hspace{0.5cm}\textbf{Tools} & Docker, Terraform, Pivotal Tracker, GIT, PostgreSQL, Fastlane, Hardhat, Redux \\
-\hspace{0.5cm}\textbf{Platforms} & Mac, Linux, Web, iOS, AWS, GCP, Firebase, Github, Datadog, Sentry, Code Climate, CircleCI, Vercel \\
+\hspace{0.5cm}\textbf{Languages} & Bash (14y), SQL (10y), Python (10y), JavaScript (7y), TypeScript (5y), Swift (5y), C++ (3y), Solidity (3y) \\
+\hspace{0.5cm}\textbf{Frameworks} & Django (7y), React (6y), NodeJS (5y), Flask (4y), SwiftUI (4y), NextJS (3y) \\
+\hspace{0.5cm}\textbf{Tools} & git (10y), Docker (6y), Pivotal Tracker (6y), JIRA (5y), Terraform (5y), Redux (4y) \\
+\hspace{0.5cm}\textbf{Platforms} & Mac, Linux, Web, iOS, AWS, GCP, Firebase, GitHub, Datadog, Sentry, Code Climate, CircleCI, Vercel \\
 \hspace{0.5cm}\textbf{Soft Skills} & Leadership, Problem Solving, Strong Communication, Time Management \\
 \end{tabular}
+\vspace{8pt}
 
 %----------EXPERIENCE-----------------
 {\color{ForestGreen} \section{\textbf{Experience}}}
@@ -135,7 +127,7 @@
 
   %----------FORD-----------------
   \resumeSubheading{\underline{\href{http://ford.com}{Ford - Experience Design}}}{Remote}
-    {Expert Creative Technologist (Full-time)}{February 2023 - Current}
+    {Senior Creative Technologist (Full-time)}{February 2023 - August 2024}
     \resumeItemListStart
           \resumeItem{Software Expert}
           {Demonstrated technical expertise and adaptability by developing multiple prototypes for the BlueCruise Audio Tour Guide Experience iOS app and the Apple Vision Pro BlueCruise experience, showcasing proficiency in cutting-edge technologies like React, React Native, iOS, CarPlay, VisionOS, Android, and Android Auto.}
@@ -162,7 +154,7 @@
           \resumeItem{Backend}
           {Developed a Django and GraphQL REST API along with a matching algorithm to pair users based on similar parameters. Created a video processing pipeline using Firebase, Firestore, and Google Storage TypeScript triggers, which asynchronously processed and cut over 8,000 videos.}
           \resumeItem{Frontend}
-          {Launched a SwiftUI iOS app from the ground up and successfully deployed it to the App Store. Also contributed to an internal TypeScript React webpage, enabling admins to monitor and manage uploaded media and content.}
+          {Launched a SwiftUI iOS app from the ground up and successfully deployed it to the App Store. Contributed to an internal TypeScript React webpage, enabling admins to monitor and manage uploaded media and content.}
           \resumeItem{DevOps}
           {Implemented a CI/CD pipeline using GitHub Actions to automate testing and deployment for both the backend and iOS app, utilizing Fastlane to manage multiple environments.}
       \resumeItemListEnd
@@ -175,26 +167,13 @@
         \resumeItem{First Engineering Hire}
         {Developed a plug-and-play cryptocurrency miner capable of mining six different cryptocurrencies 24/7, allowing users to control the device through their iOS or Android phones.}
         \resumeItem{mineOS}
-        {Developed and maintained MineOS, an Arch Linux-based operating system for small form factor computers. Created build and deployment tools to distribute MineOS images, enabling remote updates for over 5,000 miners through a test and build pipeline.}
+        {Developed and maintained MineOS, an Arch Linux-based operating system for small form factor computers. Created build and deployment tools to distribute MineOS images, enabling remote updates for over 5,000 miners through a CI/CD pipeline.}
         \resumeItem{Backend}
         {Utilized Agile, Extreme Programming, and Test-Driven Development methodologies to deploy, update, and configure a Django-based REST API serving over 10,000 users. Developed programmatic reports to calculate all accounting assets.}
         \resumeItem{DevOps}
-        {Configured and managed analytical, deployment, and pipeline tools including CircleCI, Code Climate, Datadog, and Sentry.}
+        {Configured and managed analytical tools such as CircleCI, Code Climate, Datadog, \& Sentry.}
         \resumeItem{Communication}
         {Collaborated with overseas distribution centers in China to develop and implement Standard Operating Procedures (SOPs) for assembly and manufacturing.}
-		\resumeItemListEnd
-\vspace{10pt}
-
-    %----------CAT-----------------
-    \resumeSubheading
-    {\underline{\href{https://www.catfinancial.com/en_US.html/}{Caterpillar Financial Services Corporation}}}{}
-		{Information Services - Network Team (Intern)}{May 2017 – July 2017}
-		\resumeItemListStart
-        \resumeItem{Leadership}
-        {Led research and meetings to recommend replacing a network team application. Acted as the liaison between team members and company solutions, and obtained quotes for integration into the annual budget.}
-        \resumeItem{Problem Solving}
-        {Researched and developed a web dashboard using Python and Flask with a SQL database to display global network information. Utilized JavaScript, jQuery, Bootstrap, AJAX, and Google Charts to create a user-friendly interface. Implemented a search function that integrated with database calls to enhance information retrieval speed.}
-         \resumeItem{Process Improvement}{Six Sigma Green Belt Trained}
 		\resumeItemListEnd
 
  %----------NAVY-----------------
@@ -212,6 +191,29 @@
         {Assisted in the successful overhaul of 3 major system installs with lead engineers to include: Hardware, software, and network installation, troubleshooting to the perfection of the system.}
 		\resumeItemListEnd
 \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+{\color{MidnightBlue} \section{\textbf{Education}}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Middle Tennessee State University}{Murfreesboro, Tennessee}
+      {Bachelor of Science - Computer Science; Minor in Mathematics}{July 2014 - June 2018}
+      \vspace{5pt}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Awards / Memberships:} Dean’s List 2014-2018, Member of Association of Computing Machinery (ACM), Member of the Upsilon Pi Epsilon Computer Honor Society}}}
+    \resumeSubHeadingListEnd
+  \vspace{5pt}
+
+%-----------PROJECTS-----------------
+{\color{Periwinkle} \section{\textbf{Projects}}}
+  \begin{description}
+    \item \textbf{Unraid Server} \\
+  {\small Developed and maintained an Unraid server setup running various Docker containers, demonstrating expertise in system administration, containerization, and automation. The setup includes containers for Plex, NextCloud, OpenWebUI, showcasing skills in Media Management and Backups and Home AI Assistants.}
+\item \textbf{OPNsense Firewall} \\
+{\small Configured and managed an OPNsense firewall to secure network infrastructure and implemented WireGuard VPN for secure remote access. The project highlights skills in network security, VPN configuration, and firewall management.}
+\item \textbf{Ethereum Validator} \\
+{\small Set up and maintained a Rocketpool Ethereum validator node, contributing to the Ethereum network's security and decentralization. The project demonstrates proficiency in blockchain technology, node operation, and Ethereum ecosystem.}
+\end{description}
+
 
 %-----------PROJECTS-----------------
 \end{document}
