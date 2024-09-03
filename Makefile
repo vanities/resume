@@ -2,8 +2,8 @@
 
 odt_file = coverletter.odt
 pdf_file = coverletter.pdf
-position = Fullstack Software Engineer
-company = Coinbase
+position = Senior Full Stack Engineer
+company = Vannevar Labs
 new_pdf = $(company)-$(position).pdf
 
 resume:
@@ -16,9 +16,9 @@ cover:
 	mv "tmp/content.xml.tmp" "tmp/content.xml"
 	sed "s|\[company\]|$(company)|g" "tmp/content.xml" > "tmp/content.xml.tmp"
 	mv "tmp/content.xml.tmp" "tmp/content.xml"
-	cd "tmp" && zip -r "$(odt_file)" * && /Applications/LibreOffice.app/Contents/MacOS/soffice --headless --convert-to pdf coverletter.odt && mv "$(pdf_file)" "../$(new_pdf)"
+	cd "tmp" && zip -r "$(odt_file)" * && /Applications/LibreOffice.app/Contents/MacOS/soffice --headless --convert-to pdf coverletter.odt && mv "$(pdf_file)" "../cover_letters/$(new_pdf)"
 	rm -rf "tmp"
-	@echo "Words replaced successfully in $(new_pdf)"
+	@echo "Words replaced successfully in cover_letters/$(new_pdf)"
 
 references:
 	/Applications/LibreOffice.app/Contents/MacOS/soffice --headless --convert-to pdf references.odt
