@@ -2,8 +2,8 @@
 
 odt_file = coverletter.odt
 pdf_file = coverletter.pdf
-position = Senior Frontend Software Engineer
-company = Coinbase
+position = Software Engineer
+company = CDC
 new_pdf = $(company)-$(position).pdf
 
 resume:
